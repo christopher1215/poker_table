@@ -430,15 +430,96 @@ th {
   color: green;
 }
 
+* {
+  box-sizing: border-box;
+}
 body {
   background: #635e5d;
+  min-width: 1024px;
+  min-height: 768px;
+  font-family: Arial;
+  font-size: 14px;
 }
-h1 {
-  color: #f00;
+.poker-row {
+  margin: 0 auto;
+  max-width: 1600px;
 }
-.sprite-test {
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+header {
+  height: 40px;
+  background: #0d0d0d;
+  color: #bbb;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header li {
+  display: inline-block;
+  margin: 4px 8px 0;
+}
+header a {
+  text-decoration: none;
+  color: #bbb;
+  display: inline-block;
+}
+.header-button {
+  border: 1px solid #f5a623;
+  border-radius: 15px;
+  padding: 6px 16px 6px;
+}
+.header-button-fill {
+  color: #000;
+  background: #f5a623;
+}
+.user-header-panel {
+  margin: 0 auto;
+  text-align: center;
+}
+.user-header-panel li {
+  margin-top: 6px;
+}
+.header-chat-link {
+  color: #f5a623;
+}
+[class^="icon-header-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-header-time {
+  background-image: url("../images/sprite.png");
+  background-position: -32px -37px;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+.icon-header-chat {
+  background-image: url("../images/sprite.png");
+  background-position: -37px 0px;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  text-align: center;
+  color: #000;
+  padding-top: 2px;
+}
+.icon-header-chip {
   background-image: url("../images/sprite.png");
   background-position: 0px 0px;
-  width: 69px;
-  height: 68px;
+  width: 27px;
+  height: 27px;
+  margin-right: 4px;
+}
+.icon-header-credits {
+  background-image: url("../images/sprite.png");
+  background-position: 0px -37px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
 }

@@ -69,12 +69,11 @@ gulp.task 'sprite', ->
     .pipe plugins.plumber()
     .pipe plugins.duration('sprite images compilation')
     .pipe gulp.dest config.paths.sprite.develop_compile_images
-    .pipe plugins.connect.reload()
   spriteData.css
     .pipe plugins.plumber()
     .pipe plugins.duration('sprite styles compilation')
     .pipe gulp.dest config.paths.sprite.develop_compile_styles
-    .pipe plugins.connect.reload()
+  return
 
 
 # CoffeeScript
@@ -85,7 +84,7 @@ gulp.task 'coffee', ->
   .pipe plugins.plumber()
   .pipe plugins.duration('coffeescript compilation')
   .pipe gulp.dest config.paths.coffee.dest
-  .pipe plugins.connect.reload()
+  .pipe connect.reload()
 
 
 # Copy static assets
