@@ -852,5 +852,48 @@ header a {
   height: 80px;
   display: inline-block;
   vertical-align: top;
-  margin: 0 9px;
+  margin: 0 8px;
+}
+.player-card {
+  width: 185px;
+  height: 60px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 8px;
+  background-clip: padding-box;
+  box-shadow: inset 0 -2px 2px 0 #211311;
+  background: -webkit-linear-gradient(bottom, #573227 0%, #573227 4.08%, #3d2721 7.15%, #28130d 100%);
+  background: linear-gradient(bottom, #573227 0%, #573227 4.08%, #3d2721 7.15%, #28130d 100%);
+}
+.player-card.type-up-left {
+  left: 0px;
+  top: 29px;
+}
+.player-card.type-center-left {
+  left: -41px;
+  top: 169px;
+}
+.player-card.type-bottom-left {
+  left: 0;
+  top: 308px;
+}
+.player-card.type-bottom-center-left {
+  left: 208px;
+  top: 408px;
+}
+.player-card.type-bottom-center-right {
+  right: 208px;
+  top: 408px;
+}
+.player-card.type-bottom-right {
+  right: 0;
+  top: 308px;
+}
+.player-card.type-center-right {
+  right: -41px;
+  top: 169px;
+}
+.player-card.type-up-right {
+  right: 0;
+  top: 28px;
 }
