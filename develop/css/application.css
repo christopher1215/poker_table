@@ -865,6 +865,10 @@ header a {
   background: -webkit-linear-gradient(bottom, #573227 0%, #573227 4.08%, #3d2721 7.15%, #28130d 100%);
   background: linear-gradient(bottom, #573227 0%, #573227 4.08%, #3d2721 7.15%, #28130d 100%);
 }
+.player-card.type-up {
+  left: 333px;
+  top: -12px;
+}
 .player-card.type-up-left {
   left: 0px;
   top: 29px;
