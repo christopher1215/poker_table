@@ -4,78 +4,91 @@
     <link rel="stylesheet" href="css/application.css">
   </head>
   <body>
-    <header>
-      <div class="poker-row">
-        <nav class="pull-left">
-          <ul>
-            <li><a href="javascript:void(0);" class="header-button"><span>Back to lobby</span></a></li>
-            <li><a href="javascript:void(0);" class="header-button"><span>Sit out</span></a></li>
-            <li>
-              <div class="icon-header-time"></div><span>12:00</span>
-            </li>
-          </ul>
-        </nav>
-        <nav class="pull-right">
-          <ul>
-            <li><a href="javascript:void(0);" class="header-button header-button-fill"><span>Add chips</span></a></li>
-            <li><a href="javascript:void(0);" class="header-button"><span>History</span></a></li>
-            <li><span class="header-chat-link">Chat</span>
-              <div class="icon-header-chat">2</div>
-            </li>
-          </ul>
-        </nav>
-        <nav class="user-header-panel">
-          <ul>
-            <li>
-              <div class="icon-header-chip"></div><span>Marge Simpson</span>
-            </li>
-            <li>
-              <div class="icon-header-credits"></div><span>30 000 K</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="footer">
-      <div class="footer-content">
+    <div class="main">
+      <header>
         <div class="poker-row">
-          <div class="footer-your-cards">
-            <div class="playcard playcard-big playcard-trefle">5</div>
-            <div class="playcard playcard-big playcard-hearts">A</div>
-          </div>
-          <nav class="footer-nav">
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item"><a href="javascript:void(0);" class="footer-nav-link">Fold</a></li>
-              <li class="footer-nav-item"><a href="javascript:void(0);" class="footer-nav-link">Call<span class="footer-nav-price">2500</span></a></li>
-              <li class="footer-nav-item"><a href="javascript:void(0);" class="footer-nav-link">Raise</a></li>
+          <nav class="pull-left">
+            <ul>
+              <li><a href="javascript:void(0);" class="header-button"><span>Back to lobby</span></a></li>
+              <li><a href="javascript:void(0);" class="header-button"><span>Sit out</span></a></li>
+              <li>
+                <div class="icon-header-time"></div><span>12:00</span>
+              </li>
             </ul>
           </nav>
-          <div class="footer-slider">
-            <div class="footer-slider-pane">
-              <div class="footer-slider-track">
-                <div style="width: 33%" class="footer-slider-progress"></div>
-                <div style="left: 33%" class="footer-slider-drag"></div>
-              </div>
-            </div>
-            <div class="footer-bank">
-              <div class="footer-bank-price">2000</div>
-            </div>
-            <nav class="footer-rate">
-              <ul class="footer-rate-list">
-                <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">Min</a></li>
-                <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link active">2x</a></li>
-                <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">3x</a></li>
-                <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">4x</a></li>
-                <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">Max</a></li>
-              </ul>
-            </nav>
-            <div class="icon-footer-rate-minus"></div>
-            <div class="icon-footer-rate-plus"></div>
+          <nav class="pull-right">
+            <ul>
+              <li><a href="javascript:void(0);" class="header-button header-button-fill"><span>Add chips</span></a></li>
+              <li><a href="javascript:void(0);" class="header-button"><span>History</span></a></li>
+              <li><span class="header-chat-link">Chat</span>
+                <div class="icon-header-chat">2</div>
+              </li>
+            </ul>
+          </nav>
+          <nav class="user-header-panel">
+            <ul>
+              <li>
+                <div class="icon-header-chip"></div><span>Marge Simpson</span>
+              </li>
+              <li>
+                <div class="icon-header-credits"></div><span>30 000 K</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="play-table-global">
+        <div class="play-table">
+          <div class="playcard-slots">
+            <div class="playcard-slot"></div>
+            <div class="playcard-slot"></div>
+            <div class="playcard-slot"></div>
+            <div class="playcard-slot"></div>
+            <div class="playcard-slot"></div>
           </div>
         </div>
-      </div><a href="javascript:void(0);" class="footer-hint-button">Show hints
-        <div class="footer-shevron-down"></div></a>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="poker-row">
+            <div class="footer-your-cards">
+              <div class="playcard playcard-big playcard-trefle">5</div>
+              <div class="playcard playcard-big playcard-hearts">A</div>
+            </div>
+            <nav class="footer-nav">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="javascript:void(0);" class="footer-nav-link">Fold</a></li>
+                <li class="footer-nav-item"><a href="javascript:void(0);" class="footer-nav-link">Call<span class="footer-nav-price">2500</span></a></li>
+                <li class="footer-nav-item"><a href="javascript:void(0);" class="footer-nav-link">Raise</a></li>
+              </ul>
+            </nav>
+            <div class="footer-slider">
+              <div class="footer-slider-pane">
+                <div class="footer-slider-track">
+                  <div style="width: 33%" class="footer-slider-progress"></div>
+                  <div style="left: 33%" class="footer-slider-drag"></div>
+                </div>
+              </div>
+              <div class="footer-bank">
+                <div class="footer-bank-price">2000</div>
+              </div>
+              <nav class="footer-rate">
+                <ul class="footer-rate-list">
+                  <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">Min</a></li>
+                  <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link active">2x</a></li>
+                  <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">3x</a></li>
+                  <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">4x</a></li>
+                  <li class="footer-rate-item"><a href="javascript:void(0);" class="footer-rate-link">Max</a></li>
+                </ul>
+              </nav>
+              <div class="icon-footer-rate-minus"></div>
+              <div class="icon-footer-rate-plus"></div>
+            </div>
+          </div>
+        </div><a href="javascript:void(0);" class="footer-hint-button">Show hints
+          <div class="footer-shevron-down"></div></a>
+      </div>
+      <script src="js/application.js"></script>
     </div>
-    <script src="js/application.js"></script>
   </body>
 </html>

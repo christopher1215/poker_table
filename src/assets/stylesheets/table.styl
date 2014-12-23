@@ -1,0 +1,43 @@
+.play-table-global
+  min-width 1024px
+  min-height 764px
+  position relative
+  height 100%
+
+.play-table
+  width 826px
+  height 420px
+  border 2px solid #2b1111
+  border-radius 212px
+  background-clip padding-box
+  background-color #215b1f
+  box-shadow 0 0 6px rgba(0,0,0,.7), inset 0 0 0 8px #614f42, inset 0 0 8px 8px rgba(0,0,0,.5)
+  position absolute
+  z-index 0
+  left 50%
+  top 50%
+  margin-left -413px
+  margin-top -260px
+  &:after
+    content ''
+    width 718px
+    height 328px
+    border-radius 164px
+    border: 2px solid #81a274
+    box-shadow inset 0 0 4px 1px rgba(0,0,0,.1)
+    position absolute
+    left 50px
+    top 41px
+
+.playcard-slots
+  position absolute
+  z-index 1
+  left 50%
+  top 50%
+  margin-top -40px
+  margin-left -178px
+.playcard-slot
+  font-size 0
+  sprite($playcard-slot)
+  display inline-block
+  margin 0 9px

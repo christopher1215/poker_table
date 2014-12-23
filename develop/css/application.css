@@ -433,16 +433,24 @@ th {
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 body {
   background: #635e5d;
-  min-width: 1024px;
-  min-height: 768px;
   font-family: Arial;
   font-size: 14px;
+}
+.main {
+  min-width: 1024px;
+  min-height: 768px;
+  height: 100%;
 }
 .poker-row {
   margin: 0 auto;
   max-width: 1600px;
+  min-width: 1024px;
   position: relative;
 }
 .pull-left {
@@ -453,6 +461,9 @@ body {
 }
 header {
   height: 40px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   background: #0d0d0d;
   color: #bbb;
 }
@@ -495,14 +506,14 @@ header a {
 }
 .icon-header-time {
   background-image: url("../images/sprite.png");
-  background-position: -104px -110px;
+  background-position: 0px -154px;
   width: 20px;
   height: 20px;
   margin-right: 6px;
 }
 .icon-header-chat {
   background-image: url("../images/sprite.png");
-  background-position: -37px -110px;
+  background-position: -123px -110px;
   width: 25px;
   height: 25px;
   margin-left: 10px;
@@ -512,20 +523,22 @@ header a {
 }
 .icon-header-chip {
   background-image: url("../images/sprite.png");
-  background-position: 0px -110px;
+  background-position: -86px -110px;
   width: 27px;
   height: 27px;
   margin-right: 4px;
 }
 .icon-header-credits {
   background-image: url("../images/sprite.png");
-  background-position: -72px -110px;
+  background-position: -158px -110px;
   width: 22px;
   height: 22px;
   margin-right: 10px;
 }
 .footer {
   position: fixed;
+  z-index: 100;
+  left: 0;
   bottom: 0;
   width: 100%;
   height: 124px;
@@ -544,8 +557,6 @@ header a {
   left: 0;
   top: 2px;
   background: #5a3823;
-  border-right: 2px solid #482b21;
-  border-left: 2px solid #482b21;
   z-index: 0;
 }
 .footer-content:after {
@@ -659,7 +670,7 @@ header a {
 }
 .icon-footer-rate-minus {
   background-image: url("../images/sprite.png");
-  background-position: -145px 0px;
+  background-position: 0px -110px;
   width: 33px;
   height: 34px;
   position: absolute;
@@ -669,7 +680,7 @@ header a {
 }
 .icon-footer-rate-plus {
   background-image: url("../images/sprite.png");
-  background-position: -145px -44px;
+  background-position: -43px -110px;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -733,7 +744,7 @@ header a {
 }
 .footer-shevron-down {
   background-image: url("../images/sprite.png");
-  background-position: -145px -86px;
+  background-position: -145px -90px;
   width: 13px;
   height: 8px;
   position: absolute;
@@ -776,4 +787,53 @@ header a {
   background-position: -73px 0px;
   width: 62px;
   height: 100px;
+}
+.play-table-global {
+  min-width: 1024px;
+  min-height: 764px;
+  position: relative;
+  height: 100%;
+}
+.play-table {
+  width: 826px;
+  height: 420px;
+  border: 2px solid #2b1111;
+  border-radius: 212px;
+  background-clip: padding-box;
+  background-color: #215b1f;
+  box-shadow: 0 0 6px rgba(0,0,0,0.7), inset 0 0 0 8px #614f42, inset 0 0 8px 8px rgba(0,0,0,0.5);
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  margin-left: -413px;
+  margin-top: -260px;
+}
+.play-table:after {
+  content: '';
+  width: 718px;
+  height: 328px;
+  border-radius: 164px;
+  border: 2px solid #81a274;
+  box-shadow: inset 0 0 4px 1px rgba(0,0,0,0.1);
+  position: absolute;
+  left: 50px;
+  top: 41px;
+}
+.playcard-slots {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -178px;
+}
+.playcard-slot {
+  font-size: 0;
+  background-image: url("../images/sprite.png");
+  background-position: -145px 0px;
+  width: 50px;
+  height: 80px;
+  display: inline-block;
+  margin: 0 9px;
 }
