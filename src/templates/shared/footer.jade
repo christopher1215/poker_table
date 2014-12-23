@@ -1,2 +1,51 @@
 .footer
+
+  .footer-content
+    .poker-row
+
+      .footer-your-cards
+        .playcard.playcard-big.playcard-trefle 5
+        .playcard.playcard-big.playcard-hearts A
+
+      nav.footer-nav
+        ul.footer-nav-list
+          li.footer-nav-item
+            a.footer-nav-link(href="javascript:void(0);") Fold
+          li.footer-nav-item
+            a.footer-nav-link(href="javascript:void(0);")
+              | Call
+              span.footer-nav-price 2500
+          li.footer-nav-item
+            a.footer-nav-link(href="javascript:void(0);") Raise
+
+      .footer-slider
+        .footer-slider-pane
+          .footer-slider-track
+            .footer-slider-progress(style="width: 33%")
+            .footer-slider-drag(style="left: 33%")
+
+        .footer-bank
+          .footer-bank-price 2000
+
+        nav.footer-rate
+          ul.footer-rate-list
+            li.footer-rate-item
+              a.footer-rate-link(href="javascript:void(0);") Min
+            li.footer-rate-item
+              a.footer-rate-link.active(href="javascript:void(0);") 2x
+            li.footer-rate-item
+              a.footer-rate-link(href="javascript:void(0);") 3x
+            li.footer-rate-item
+              a.footer-rate-link(href="javascript:void(0);") 4x
+            li.footer-rate-item
+              a.footer-rate-link(href="javascript:void(0);") Max
+
+        .icon-footer-rate-minus
+        .icon-footer-rate-plus
+
+
+  a.footer-hint-button(href="javascript:void(0);")
+    | Show hints
+    .footer-shevron-down
+
 script(src="js/application.js")
