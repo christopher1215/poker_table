@@ -506,14 +506,14 @@ header a {
 }
 .icon-header-time {
   background-image: url("../images/sprite.png");
-  background-position: 0px -200px;
+  background-position: -67px -200px;
   width: 20px;
   height: 20px;
   margin-right: 6px;
 }
 .icon-header-chat {
   background-image: url("../images/sprite.png");
-  background-position: -205px -123px;
+  background-position: 0px -200px;
   width: 25px;
   height: 25px;
   margin-left: 10px;
@@ -523,14 +523,14 @@ header a {
 }
 .icon-header-chip {
   background-image: url("../images/sprite.png");
-  background-position: -205px -86px;
+  background-position: -205px -146px;
   width: 27px;
   height: 27px;
   margin-right: 4px;
 }
 .icon-header-credits {
   background-image: url("../images/sprite.png");
-  background-position: -205px -158px;
+  background-position: -35px -200px;
   width: 22px;
   height: 22px;
   margin-right: 10px;
@@ -670,7 +670,7 @@ header a {
 }
 .icon-footer-rate-minus {
   background-image: url("../images/sprite.png");
-  background-position: -205px 0px;
+  background-position: -205px -60px;
   width: 33px;
   height: 34px;
   position: absolute;
@@ -680,7 +680,7 @@ header a {
 }
 .icon-footer-rate-plus {
   background-image: url("../images/sprite.png");
-  background-position: -205px -44px;
+  background-position: -205px -104px;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -782,13 +782,13 @@ header a {
 }
 .playcard-big.playcard-hearts {
   background-image: url("../images/sprite.png");
-  background-position: -72px 0px;
+  background-position: 0px 0px;
   width: 63px;
   height: 100px;
 }
 .playcard-big.playcard-trefle {
   background-image: url("../images/sprite.png");
-  background-position: 0px 0px;
+  background-position: -73px 0px;
   width: 62px;
   height: 100px;
 }
@@ -949,4 +949,30 @@ header a {
 .player-credits {
   text-align: center;
   color: #d5933c;
+}
+.player-avatar {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-clip: padding-box;
+  background-color: #332d29;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.2);
+  border: 2px solid #000;
+  overflow: hidden;
+}
+.player-avatar .no-avatar {
+  background-image: url("../images/sprite.png");
+  background-position: -205px 0px;
+  width: 40px;
+  height: 50px;
+  margin: 5px 8px 0;
+}
+.direction-left .player-avatar {
+  left: -18px;
+  top: 0px;
+}
+.direction-right .player-avatar {
+  right: -18px;
+  top: 0px;
 }

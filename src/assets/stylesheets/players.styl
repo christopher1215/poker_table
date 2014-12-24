@@ -78,3 +78,25 @@
 .player-credits
   text-align center
   color #d5933c
+
+.player-avatar
+  position absolute
+  width 60px
+  height 60px
+  border-radius 30px
+  background-clip padding-box
+  background-color #332d29
+  box-shadow 0 0 0 2px rgba(0,0,0,.2)
+  border: 2px solid #000
+  overflow hidden
+  .no-avatar
+    sprite($no-avatar)
+    margin 5px 8px 0
+.direction-left
+  .player-avatar
+    left -18px
+    top 0px
+.direction-right
+  .player-avatar
+    right -18px
+    top 0px
