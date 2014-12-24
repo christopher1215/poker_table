@@ -1067,3 +1067,32 @@ header a {
 .player-card-active.direction-right:after {
   right: -24px;
 }
+.player-state {
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 26px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: -28px;
+}
+.player-state.check {
+  background-color: #000;
+}
+.player-state.raise {
+  background-color: #e72e00;
+}
+.player-state.fold {
+  background-color: #333131;
+  font-size: 14px;
+}
+.direction-left .player-state {
+  left: -22px;
+}
+.direction-right .player-state {
+  right: -22px;
+}
