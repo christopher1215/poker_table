@@ -34,3 +34,35 @@
   &.type-up-right
     right 0
     top 28px
+
+.pile-icon
+  sprite($pile)
+  position absolute
+.pile-value
+  color #fff
+  font-size 16px
+  text-shadow 0 1px 2px rgba(0,0,0,.5)
+  position absolute
+
+.direction-left
+  .pile-icon
+    right -2px
+    top -13px
+  .pile-value
+    right 6px
+    bottom 4px
+
+.direction-right
+  .pile-icon
+    left 6px
+    top -13px
+  .pile-value
+    left 6px
+    bottom 4px
+
+.pile
+  position absolute
+  .pile-value
+    position absolute
+    left 50px
+    top 20px

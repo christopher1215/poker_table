@@ -18,14 +18,47 @@ html
             .playcard-slot
             .playcard-slot
 
-          .player-card.type-up
-          .player-card.type-up-left
-          .player-card.type-center-left
-          .player-card.type-bottom-left
-          .player-card.type-bottom-center-left
+          .pile(style="left: 340px; top: 270px;")
+            .pile-icon
+            .pile-value 2500
+          .pile(style="left: 250px; top: 110px;")
+            .pile-icon
+            .pile-value 1500
+          .pile(style="left: 490px; top: 110px;")
+            .pile-icon
+            .pile-value 500
+
+          .player-card.type-up.direction-left
+            .pile-icon
+            .pile-value 2500
+
+          .player-card.type-up-left.direction-left
+            .pile-icon
+            .pile-value 2500
+
+          .player-card.type-center-left.direction-left
+            .pile-icon
+            .pile-value 2500
+
+          .player-card.type-bottom-left.direction-left
+            .pile-icon
+            .pile-value 2500
+
+          .player-card.type-bottom-center-left.direction-left
+            .pile-value 0
+
           .player-card.type-bottom-center-right
-          .player-card.type-bottom-right
-          .player-card.type-center-right
-          .player-card.type-up-right
+
+          .player-card.type-bottom-right.direction-right
+            .pile-icon
+            .pile-value 2500
+
+          .player-card.type-center-right.direction-right
+            .pile-icon
+            .pile-value 2500
+
+          .player-card.type-up-right.direction-right
+            .pile-icon
+            .pile-value 2500
 
       include shared/footer

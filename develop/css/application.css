@@ -506,14 +506,14 @@ header a {
 }
 .icon-header-time {
   background-image: url("../images/sprite.png");
-  background-position: -205px -32px;
+  background-position: 0px -200px;
   width: 20px;
   height: 20px;
   margin-right: 6px;
 }
 .icon-header-chat {
   background-image: url("../images/sprite.png");
-  background-position: -163px -154px;
+  background-position: -205px -123px;
   width: 25px;
   height: 25px;
   margin-left: 10px;
@@ -523,14 +523,14 @@ header a {
 }
 .icon-header-chip {
   background-image: url("../images/sprite.png");
-  background-position: -163px -110px;
+  background-position: -205px -86px;
   width: 27px;
   height: 27px;
   margin-right: 4px;
 }
 .icon-header-credits {
   background-image: url("../images/sprite.png");
-  background-position: -205px 0px;
+  background-position: -205px -158px;
   width: 22px;
   height: 22px;
   margin-right: 10px;
@@ -670,7 +670,7 @@ header a {
 }
 .icon-footer-rate-minus {
   background-image: url("../images/sprite.png");
-  background-position: -120px -110px;
+  background-position: -205px 0px;
   width: 33px;
   height: 34px;
   position: absolute;
@@ -680,7 +680,7 @@ header a {
 }
 .icon-footer-rate-plus {
   background-image: url("../images/sprite.png");
-  background-position: -120px -154px;
+  background-position: -205px -44px;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -744,7 +744,7 @@ header a {
 }
 .footer-shevron-down {
   background-image: url("../images/sprite.png");
-  background-position: -205px -62px;
+  background-position: -145px -90px;
   width: 13px;
   height: 8px;
   position: absolute;
@@ -900,4 +900,41 @@ header a {
 .player-card.type-up-right {
   right: 0;
   top: 28px;
+}
+.pile-icon {
+  background-image: url("../images/sprite.png");
+  background-position: -120px -110px;
+  width: 47px;
+  height: 56px;
+  position: absolute;
+}
+.pile-value {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  position: absolute;
+}
+.direction-left .pile-icon {
+  right: -2px;
+  top: -13px;
+}
+.direction-left .pile-value {
+  right: 6px;
+  bottom: 4px;
+}
+.direction-right .pile-icon {
+  left: 6px;
+  top: -13px;
+}
+.direction-right .pile-value {
+  left: 6px;
+  bottom: 4px;
+}
+.pile {
+  position: absolute;
+}
+.pile .pile-value {
+  position: absolute;
+  left: 50px;
+  top: 20px;
 }
