@@ -1043,8 +1043,27 @@ header a {
   height: 27px;
 }
 .direction-left .is-dealer {
-  left: -40px;
+  left: -42px;
 }
 .direction-right .is-dealer {
-  right: -40px;
+  right: -42px;
+}
+.player-card-active .player-avatar {
+  border-color: #fc0;
+}
+.player-card-active:after {
+  content: '';
+  background-image: url("../images/sprite.png");
+  background-position: -43px -200px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  z-index: 18;
+  top: 16px;
+}
+.player-card-active.direction-left:after {
+  left: -24px;
+}
+.player-card-active.direction-right:after {
+  right: -24px;
 }

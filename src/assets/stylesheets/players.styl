@@ -140,7 +140,23 @@
   sprite($is-dealer)
 .direction-left
   .is-dealer
-    left -40px
+    left -42px
 .direction-right
   .is-dealer
-    right -40px
+    right -42px
+
+.player-card-active
+  .player-avatar
+    border-color #ffcc00
+  &:after
+    content ''
+    sprite($header-chip)
+    position absolute
+    z-index 18
+    top 16px
+  &.direction-left
+    &:after
+      left -24px
+  &.direction-right
+    &:after
+      right -24px
