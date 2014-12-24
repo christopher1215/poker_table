@@ -506,14 +506,14 @@ header a {
 }
 .icon-header-time {
   background-image: url("../images/sprite.png");
-  background-position: -104px -200px;
+  background-position: -255px -64px;
   width: 20px;
   height: 20px;
   margin-right: 6px;
 }
 .icon-header-chat {
   background-image: url("../images/sprite.png");
-  background-position: -37px -200px;
+  background-position: -86px -200px;
   width: 25px;
   height: 25px;
   margin-left: 10px;
@@ -523,14 +523,14 @@ header a {
 }
 .icon-header-chip {
   background-image: url("../images/sprite.png");
-  background-position: 0px -200px;
+  background-position: -245px -124px;
   width: 27px;
   height: 27px;
   margin-right: 4px;
 }
 .icon-header-credits {
   background-image: url("../images/sprite.png");
-  background-position: -72px -200px;
+  background-position: -121px -200px;
   width: 22px;
   height: 22px;
   margin-right: 10px;
@@ -670,7 +670,7 @@ header a {
 }
 .icon-footer-rate-minus {
   background-image: url("../images/sprite.png");
-  background-position: -205px -110px;
+  background-position: 0px -200px;
   width: 33px;
   height: 34px;
   position: absolute;
@@ -680,7 +680,7 @@ header a {
 }
 .icon-footer-rate-plus {
   background-image: url("../images/sprite.png");
-  background-position: -205px -154px;
+  background-position: -43px -200px;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -744,7 +744,7 @@ header a {
 }
 .footer-shevron-down {
   background-image: url("../images/sprite.png");
-  background-position: -145px -90px;
+  background-position: -255px -94px;
   width: 13px;
   height: 8px;
   position: absolute;
@@ -782,25 +782,25 @@ header a {
 }
 .playcard-big.playcard-hearts {
   background-image: url("../images/sprite.png");
-  background-position: 0px 0px;
+  background-position: -72px 0px;
   width: 63px;
   height: 100px;
 }
 .playcard-big.playcard-trefle {
   background-image: url("../images/sprite.png");
-  background-position: -73px 0px;
+  background-position: 0px 0px;
   width: 62px;
   height: 100px;
 }
 .playcard-middle.playcard-hearts {
   background-image: url("../images/sprite.png");
-  background-position: -60px -110px;
+  background-position: -145px 0px;
   width: 50px;
   height: 80px;
 }
 .playcard-middle.playcard-trefle {
   background-image: url("../images/sprite.png");
-  background-position: -145px 0px;
+  background-position: -60px -110px;
   width: 50px;
   height: 80px;
 }
@@ -854,52 +854,58 @@ header a {
   vertical-align: top;
   margin: 0 8px;
 }
-.player-card {
+.player-card-wrap {
   width: 185px;
   height: 60px;
   position: absolute;
   z-index: 10;
+}
+.player-card-wrap.type-up {
+  left: 333px;
+  top: -12px;
+}
+.player-card-wrap.type-up-left {
+  left: 0px;
+  top: 29px;
+}
+.player-card-wrap.type-center-left {
+  left: -41px;
+  top: 169px;
+}
+.player-card-wrap.type-bottom-left {
+  left: 0;
+  top: 308px;
+}
+.player-card-wrap.type-bottom-center-left {
+  left: 208px;
+  top: 408px;
+}
+.player-card-wrap.type-bottom-center-right {
+  right: 208px;
+  top: 408px;
+}
+.player-card-wrap.type-bottom-right {
+  right: 0;
+  top: 308px;
+}
+.player-card-wrap.type-center-right {
+  right: -41px;
+  top: 169px;
+}
+.player-card-wrap.type-up-right {
+  right: 0;
+  top: 28px;
+}
+.player-card {
+  width: 185px;
+  height: 60px;
+  position: absolute;
+  z-index: 15;
   border-radius: 8px;
   background-clip: padding-box;
   box-shadow: inset 0 -2px 2px 0 #211311;
   background: -webkit-linear-gradient(bottom, #573227 0%, #573227 4.08%, #3d2721 7.15%, #28130d 100%);
   background: linear-gradient(bottom, #573227 0%, #573227 4.08%, #3d2721 7.15%, #28130d 100%);
-}
-.player-card.type-up {
-  left: 333px;
-  top: -12px;
-}
-.player-card.type-up-left {
-  left: 0px;
-  top: 29px;
-}
-.player-card.type-center-left {
-  left: -41px;
-  top: 169px;
-}
-.player-card.type-bottom-left {
-  left: 0;
-  top: 308px;
-}
-.player-card.type-bottom-center-left {
-  left: 208px;
-  top: 408px;
-}
-.player-card.type-bottom-center-right {
-  right: 208px;
-  top: 408px;
-}
-.player-card.type-bottom-right {
-  right: 0;
-  top: 308px;
-}
-.player-card.type-center-right {
-  right: -41px;
-  top: 169px;
-}
-.player-card.type-up-right {
-  right: 0;
-  top: 28px;
 }
 .pile-icon {
   background-image: url("../images/sprite.png");
@@ -963,14 +969,14 @@ header a {
 }
 .player-avatar .no-avatar {
   background-image: url("../images/sprite.png");
-  background-position: -205px 0px;
+  background-position: -205px -64px;
   width: 40px;
   height: 50px;
   margin: 5px 8px 0;
 }
 .player-avatar .join-game {
   background-image: url("../images/sprite.png");
-  background-position: -205px -60px;
+  background-position: -205px -124px;
   width: 30px;
   height: 40px;
   margin: 6px 0 0 14px;
@@ -991,4 +997,14 @@ header a {
   line-height: 60px;
   position: relative;
   left: -10px;
+}
+.player-hidden-cards {
+  background-image: url("../images/sprite.png");
+  background-position: -205px 0px;
+  width: 70px;
+  height: 54px;
+  position: relative;
+  z-index: 11;
+  left: 60px;
+  top: -30px;
 }
